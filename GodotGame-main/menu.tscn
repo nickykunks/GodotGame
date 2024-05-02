@@ -1,0 +1,20 @@
+[gd_scene load_steps=4 format=3 uid="uid://kypjpr625rku"]
+
+[ext_resource type="Texture2D" uid="uid://bujt7o8tknexw" path="res://play_button.png" id="1_legcv"]
+[ext_resource type="Theme" uid="uid://dxp52a1bpio8a" path="res://new_theme.tres" id="1_wp1ix"]
+[ext_resource type="Script" path="res://Button.gd" id="3_jikmn"]
+
+[node name="menu" type="Node2D"]
+
+[node name="Button" type="Button" parent="."]
+offset_left = 379.0
+offset_top = 224.0
+offset_right = 781.0
+offset_bottom = 375.0
+theme = ExtResource("1_wp1ix")
+icon = ExtResource("1_legcv")
+icon_alignment = 1
+expand_icon = true
+script = ExtResource("3_jikmn")
+
+[connection signal="pressed" from="Button" to="Button" method="_on_pressed"]

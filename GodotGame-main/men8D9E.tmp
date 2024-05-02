@@ -1,0 +1,15 @@
+[gd_scene load_steps=3 format=3 uid="uid://kypjpr625rku"]
+
+[ext_resource type="Texture2D" uid="uid://bujt7o8tknexw" path="res://play_button.png" id="1_legcv"]
+[ext_resource type="Theme" uid="uid://dxp52a1bpio8a" path="res://new_theme.tres" id="1_wp1ix"]
+
+[node name="menu" type="Node2D"]
+
+[node name="Button" type="Button" parent="."]
+offset_left = 103.0
+offset_top = 24.0
+offset_right = 322.0
+offset_bottom = 108.0
+theme = ExtResource("1_wp1ix")
+icon = ExtResource("1_legcv")
+expand_icon = true
